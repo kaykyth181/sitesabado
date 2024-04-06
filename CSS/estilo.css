@@ -48,7 +48,7 @@ html[data-theme='light'] .brand-logo {
     vertical-align: baseline; /* linha vertical */
     list-style: none; /* estilo das listas */
     scrollbar-width: thin; /* barra de rolagem */
-    scrollbar-width: var(--primary-bg-color ) transparent;
+    scrollbar-color: var(--secundary-bg-color) transparent;
 }
 
 body{
