@@ -167,7 +167,7 @@ p{
 
 .menu-text{ /* TAG span */
     font-size: .75rem;
-    text-transform: uppercase;
+    text-transform: uppercase; /*deixa tudo em maiusculo*/
 }
 .menu-mobile{
     width: 100vw;
@@ -181,4 +181,19 @@ p{
     justify-content: center;
     padding: 0.5rem 1rem;
 }
+.menu-icon, .menu-text{
+    color: var(--text-color);
+}
+
+.menu-icon{
+    font-size: 1.5rem; 
+}
+.menu-social{
+    gap: 1rem;
+}
+.header-nav{
+    display: none;
+}
+
+/* ---------------------FIM CSS MENU-------------------------- */
 
