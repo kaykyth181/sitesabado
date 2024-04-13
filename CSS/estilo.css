@@ -56,6 +56,18 @@ body{
     font-family: 'Inter', Tahoma, Geneva, Verdana, sans-serif ;
     color: var(--text-color)
 }
+::-webkit-scrollbar{
+    width: 0.5;
+}
+::-webkit-scrollbar-track{ /* estrutura da barra de rolagem */
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb{ 
+    background: var(--secundary-bg-color);
+    border-radius: 50rem;
+}
+
 a{
     text-decoration: none;
     color: var(--text-color);
@@ -146,8 +158,10 @@ p{
     align-items: center;
     gap: .5rem; /* espaço */
 }
-.menu-link.active, 
-.menu-link:hover{
+.menu-link.active .menu-icon, 
+.menu-link.active .menu-text,
+.menu-link:hover .menu-icon,
+.menu-link:hover .menu-text{
     color: var(--primary-color);
 }
 
@@ -155,3 +169,16 @@ p{
     font-size: .75rem;
     text-transform: uppercase;
 }
+.menu-mobile{
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+    justify-content: space-between;
+    border-top: 1.5px solid var(--primary-border-color);
+}
+.menu-mobile .menu-link{
+    flex-direction: column;
+    justify-content: center;
+    padding: 0.5rem 1rem;
+}
+
