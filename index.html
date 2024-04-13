@@ -6,6 +6,8 @@
     <title>site do Kayky | sabado</title> <!-- titulo = titulo -->
     <link rel="shortcut icon" href="img/favicon.png">
     <link rel="stylesheet" href="CSS/estilo.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"> <!-- bootstrap -->
+
 </head>
 <body> <!-- body = corpo(do site)-->  
     <header class="header"> <!-- cabeçalho-->
@@ -53,33 +55,36 @@
     </header> <!-- Fim menu de navegação -->
 
     <!-- Menu mobile -->
-    <nav>
-        <ul>
-            <li>
-                <a href="#home">
-                    
-                    <span> Home </span>
+    <nav id="nav-mobile">
+        <ul class="menu menu-mobile">
+            <li class="menu-item">
+                <a href="#home" class="menu-link active">
+                    <i class="menu-icon bi bi-house-door"> </i>
+                    <span class="menu-text"> Home </span>
 
                 </a>
             </li>
-            <li>
-                <a href="#projetos">
+
+            <li class="menu-item">
+                <a href="#projetos" class="menu-link">
+                    <i class="menu-icon bi bi-window-stack"></i>
+                    <span class="menu-text"> Projetos </span>
+                </a>
+            </li>
+
+            <li class="menu-item">
+                <a href="#sobre" class="menu-link">
+                    <i class="menu-icon bi bi-person"></i>
+                    <span class="menu-text"> Sobre </span>
                     
-                    <span> Projetos </span>
 
                 </a>
             </li>
-            <li>
-                <a href="#sobre">
-                    
-                    <span> Sobre </span>
 
-                </a>
-            </li>
-            <li>
-                <a href="#contato">
-                    
-                    <span> Contato </span>
+            <li class="menu-item">
+                <a href="#contato" class="menu-link"> 
+                    <i class="bi bi-telephone"></i>
+                    <span class="menu-text"> Contato </span>
 
                 </a>
             </li>
