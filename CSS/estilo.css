@@ -9,6 +9,12 @@
     --secondary-bg-color: #28292E;
     --primary-border-color: #28292E;
     --secondary-border-color: #56575A;
+
+    /* --primary-color: #F23005; 
+    --primary-bg-color: #0D0D0D; 
+    --secondary-bg-color: #D92B04;
+    --primary-border-color: #731702;
+    --secondary-border-color: #F2F2F2; */
         
     /* definir cores padrão para os TEXTOS em Variável */
     --title-color: #F0F0F0;
