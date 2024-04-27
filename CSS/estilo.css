@@ -239,7 +239,6 @@ main{
     width: 100%;
     aspect-ratio: 16/9;
 }
-
 /* Seção Tecnologias */
 .tecnologias {
     display: flex;
@@ -340,3 +339,88 @@ main{
     margin: auto;
 }
 /* fim projeto */
+
+.sobre{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.sobre-content1, .sobre-content2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.sobre-foto{
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 5rem;
+    border: 1px solid var(--primary-border-color);
+}
+
+.sobre-descricao {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap:1.5rem;
+}
+.sobre-icons {
+    display: flex;
+    align-items: center;
+    gap: .85rem;
+}
+
+.sobre-icons i {
+    font-size: 1.25;
+}
+.sobre-content1 .col1, 
+.sobre-content2 .col2 {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    gap: 2rem;
+}
+
+.sobre-content1 .col1 .row1,
+.sobre-content2 .col1 .row2 {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+.accordion-header {
+    width: 100%;
+    display: flex;
+    padding: 0.75rem 1rem;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid var(--primary-border-color);
+    background: transparent;
+    text-align: left;
+    cursor: pointer;
+    transition: ease-in-out .3s;
+}
+.accordion-header span {
+    color: var(--title-color);
+}
+
+.accordion-header.star{
+    border-radius: 0.25rem 0.25rem 0rem 0rem;
+}
+
+.accordion-header.end,
+.accordion-item.active .accordion-body.end{
+    border-radius: 0rem 0rem 0.25rem 0.25rem;
+}
+.accordion-item.active .accordion-header.end{
+    border-radius: 0rem;
+
+}
+.accordion-body {
+    display: none;
+    padding: 1.25rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.625rem;
+    border: 1px var(--secondary-bg-color);
+}
