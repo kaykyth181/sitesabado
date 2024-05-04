@@ -10,7 +10,7 @@
     --primary-border-color: #28292E;
     --secondary-border-color: #56575A; */
 
-    --primary-color: #4297ff; /* cor textos */
+    --primary-color: #72b2ff; /* cor textos */
     --primary-bg-color: #030f14; /* BG = Background */
     --secondary-bg-color: #022b73;
     --primary-border-color: #043cbf;
@@ -18,9 +18,9 @@
         
     /* definir cores padrão para os TEXTOS em Variável */
     --title-color: #f7f9ff;
-    --text-color: #edf3fe;
+    --text-color: #f2f6fe;
     --link-color:#77a1d8;
-    --icon-color: #a1c8ef;
+    --icon-color: #396fec;
 } 
 
 :root [data-theme='light'] {
@@ -222,6 +222,9 @@ p {
   
 .btn-primary {
     border: 1px solid var(--primary-color);
+}
+#home, .projetos, .sobre, .contato{
+    padding: 2.5rem 1rem;
 }
 main {
     display: flex;
