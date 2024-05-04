@@ -4,21 +4,21 @@
 :root, :root[data-theme='dark'] {
     /* definir cores padrão em Variável */
     
-    --primary-color: #f0f0f0;  /* cor textos */
-    --primary-bg-color: #171111;  /* BG = Background */
+/*     --primary-color: #f0f0f0;  
+    --primary-bg-color: #171111;  
     --secondary-bg-color: #28292E;
     --primary-border-color: #28292E;
-    --secondary-border-color: #56575A;
+    --secondary-border-color: #56575A; */
 
-    /* --primary-color: #F23005; 
-    --primary-bg-color: #0D0D0D; 
-    --secondary-bg-color: #D92B04;
-    --primary-border-color: #731702;
-    --secondary-border-color: #F2F2F2; */
+    --primary-color: #0CF25D; /* cor textos */
+    --primary-bg-color: #011218; /* BG = Background */
+    --secondary-bg-color: #01602a;
+    --primary-border-color: #02735E;
+    --secondary-border-color: #025951; 
         
     /* definir cores padrão para os TEXTOS em Variável */
-    --title-color: #F0F0F0;
-    --text-color: #9a9a9c;
+    --title-color: #eafbe7;
+    --text-color: #eeffec;
     --link-color:#9a9a9c;
     --icon-color: #C7C8C9;
 } 
@@ -371,7 +371,7 @@ main {
 .sobre-icons i {
     font-size: 1.25rem;
 }
-.sobre-content1 .col1,
+.sobre-content2 .col1,
 .sobre-content2 .col2 {
     display: flex;
     flex-direction: column;
@@ -569,14 +569,40 @@ footer p {
     .tecnologias-lista{
         gap: 1rem;
     }
+    .tecnologias-item {
+        width: 6rem;
+        height: 6rem;
+    }
+    .tecnologias-logo{ 
+        height: 3rem;
+    }
+    p, span, li{
+        font-size: 1.15rem;
+    }
+    .card-button .btn, 
+    .descricao-button .btn{
+        width: auto;
+    }
 
 }
 
-
-
-
-
-
-
-
-
+@media (min-width: 1400px){
+    h1{
+        font-size: 6.25rem;
+    }
+    h2{
+        font-size: 4.5rem;
+    }
+    h3{
+        font-size: 3.25rem;
+    }
+    .header{
+        padding: 1rem 15rem;
+    }
+    #home{
+        padding: 12rem 15rem 2rem;
+    }
+    .tecnologias, .projetos,.sobre{
+        padding: 109rem 15rem 4rem;
+    }
+}
