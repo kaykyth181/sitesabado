@@ -11,14 +11,14 @@
     --secondary-border-color: #56575A; */
 
     --primary-color: #4297ff; /* cor textos */
-    --primary-bg-color: #041820; /* BG = Background */
+    --primary-bg-color: #030f14; /* BG = Background */
     --secondary-bg-color: #022b73;
     --primary-border-color: #043cbf;
     --secondary-border-color: #033976; 
         
     /* definir cores padrão para os TEXTOS em Variável */
     --title-color: #f7f9ff;
-    --text-color: #e8f1ff;
+    --text-color: #edf3fe;
     --link-color:#77a1d8;
     --icon-color: #a1c8ef;
 } 
