@@ -8,7 +8,7 @@ const toggleTheme = document.getElementById("toggleTheme");
 const rootHtml = document.documentElement;
 
 // querySelectorAll pega todos os elementos com o nome
-const accordionHeader = document.querySelectorAll(".accordion-header");
+const accordionHeaders = document.querySelectorAll(".accordion-header");
 
 const menuLinks = document.querySelectorAll(".menu-link");
 
@@ -23,7 +23,17 @@ function changeTheme(){
 
 toggleTheme.addEventListener("click", changeTheme);
 
-//fim do toggle-theme
+//função para alternar tema dark e light
+
+accordionHeaders.forEach(header => {
+    header.addEventListener("click", () =>{
+        const accordionItem = header.parentElement;
+        const accordionActive = accordionItem.classList.contains("active");
+        accordionActive ? accordionItem.classList.remove("active"): accordionItem.classList.add("active");
+    })
+
+
+})
 
 
 
